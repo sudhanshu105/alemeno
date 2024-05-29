@@ -1,0 +1,23 @@
+.course-card{
+    padding-top: 1px;
+    display: flex;
+    background-color: antiquewhite;
+    padding: 2px;
+    box-shadow: 1px 1px 1px black;
+    color: black;
+}
+
+.details{
+    font-size: 10px;
+    color: rgb(0, 0, 0) !important;
+}
+
+.course-card img{
+    height: 200px;
+    width: 300px;
+}
+
+.course-card a{
+    text-decoration: none;
+    color: black;
+}

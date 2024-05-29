@@ -1,0 +1,13 @@
+.course-list{
+    padding-top: 20px;
+    display: flex;
+    column-gap: 10px;
+    background-color: #00203FFF;
+    color: white;
+    max-width: 90%;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    padding-left: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+}

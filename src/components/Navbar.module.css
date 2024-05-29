@@ -1,0 +1,40 @@
+
+
+.Navbar{
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+    column-gap: 20px;
+    position: fixed;
+    top: 0;
+    margin-top: 0;
+    background-color: #00203FFF;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 35px;
+    box-shadow: 1px 1px 1px rgb(44, 43, 43);
+}
+
+.menu{
+    justify-content: center;
+    display: flex;
+    column-gap: 10px;
+}
+
+.active{
+    color: rgb(1, 196, 235);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.simple{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+nav link:hover{
+    color: aqua;
+}

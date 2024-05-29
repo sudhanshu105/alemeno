@@ -1,0 +1,36 @@
+.course-listing-page{
+    padding-left: 10%;
+    padding-top: 70px;
+}
+
+.search{
+    display: flex;
+    justify-content: center;
+    margin-right: 10%;
+}
+
+/* .courseBox{
+    width: 300px;
+    border: 1px solid black;
+    padding-left: 10px;
+    background-color: #00203FFF;
+    color: azure;
+
+} */
+
+.courseBox a{
+    text-decoration: none;
+    /* color: white; */
+}
+
+.info{
+    display: flex;
+    justify-content: center;
+    margin-right: 10%;
+    margin-bottom: 20px;
+}
+
+.info img{
+    height: 40%;
+    width: 40%;
+}

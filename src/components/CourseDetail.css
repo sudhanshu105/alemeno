@@ -1,0 +1,11 @@
+.course-detail{
+    padding-top: 70px;
+    justify-content: center;
+    margin: auto;
+    padding-left: 10%;
+}
+
+.course-detail img{
+    height: 200px;
+    width: 400px;
+}
