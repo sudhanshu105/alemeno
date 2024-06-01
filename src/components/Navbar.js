@@ -32,7 +32,7 @@ const Navbar = () => {
         <Link to='/search' id='search' onClick={handleClick} className={alink === 'search' ? css.active : css.simple}>SearchCourses</Link>
       </div>
       <div className={css.sign}>
-        {name}
+      <Link to='/dashboard' id='dashboard' onClick={handleClick} className={alink === 'dashboard' ? css.active : css.simple}> {name} </Link>
       </div >
     </nav>
   );
