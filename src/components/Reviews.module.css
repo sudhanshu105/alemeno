@@ -1,17 +1,10 @@
 
  .outer{
-    /* margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 5%;
-    margin-bottom: 10%; */
     padding-left: 10%;
     padding-right: 10%;
     padding-bottom: 10%;
     padding-top: 5%;
     background-color: #5B84B1FF;
-
-    /* background-color: #63aa73 */
-   
 }
 
 .content{
@@ -101,15 +94,3 @@
     border-radius: 20px 0 20px 0;
     
   }
-
-  /* @media screen and (max-width: 576px) {
-    .photo {
-        display: none; 
-    }
-
-    .items{
-        height: fit-content;
-        max-width: fit-content;
-        
-    }
-} */

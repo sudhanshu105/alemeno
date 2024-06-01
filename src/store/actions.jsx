@@ -1,7 +1,11 @@
-
 export const setCourses = (courses) => ({
   type: 'SET_COURSES',
   payload: courses
+});
+
+export const likeCourse = (courseId) => ({
+  type: 'LIKE_COURSE',
+  payload: courseId,
 });
 
 export const enrollCourse = (course) => ({

@@ -20,7 +20,7 @@ const courses = [
     thumbnail: '/native.jpg',
     duration: '8 weeks',
     schedule: 'Tuesdays and Thursdays, 6:00 PM - 8:00 PM',
-    location: 'Online',
+    location: 'Online', 
     likes: '10',
     dueDate: "2024-06-01",
     progress: 50,
@@ -38,8 +38,8 @@ const courses = [
       }
     ],
     students: [
-      { id: 101, name: 'Alice Johnson', email: 'alice@example.com' },
-      { id: 102, name: 'Bob Smith', email: 'bob@example.com' }
+      { id: 101, name: 'Alice Johnson', email: 'alice@example.com',progress: 75  },
+      { id: 102, name: 'Bob Smith', email: 'bob@example.com',progress: 75  }
     ]
   },
 
@@ -70,8 +70,8 @@ const courses = [
       }
     ],
     students: [
-      { id: 101, name: 'Sudhanshu', email: 'sudhanshu@example.com' },
-      { id: 102, name: 'Harsh Kotary', email: 'Harko@example.com' }
+      { id: 101, name: 'Sudhanshu', email: 'sudhanshu@example.com',progress: 75  },
+      { id: 102, name: 'Harsh Kotary', email: 'Harko@example.com' ,progress: 75 }
     ]
   },
 
@@ -102,8 +102,8 @@ const courses = [
       }
     ],
     students: [
-      { id: 101, name: 'Alice Johnson', email: 'alice@example.com' },
-      { id: 102, name: 'Bob Smith', email: 'bob@example.com' }
+      { id: 101, name: 'Alice Johnson', email: 'alice@example.com' ,progress: 75, },
+      { id: 102, name: 'Bob Smith', email: 'bob@example.com',progress: 75,  }
     ]
   },
 
@@ -134,8 +134,8 @@ const courses = [
       }
     ],
     students: [
-      { id: 101, name: 'Alice Johnson', email: 'alice@example.com' },
-      { id: 102, name: 'Bob Smith', email: 'bob@example.com' }
+      { id: 101, name: 'Alice Johnson', email: 'alice@example.com', progress: 100, },
+      { id: 102, name: 'Bob Smith', email: 'bob@example.com', progress: 75, }
     ]
   },
 
@@ -166,8 +166,8 @@ const courses = [
       }
     ],
     students: [
-      { id: 101, name: 'Alice Johnson', email: 'alice@example.com' },
-      { id: 102, name: 'Bob Smith', email: 'bob@example.com' }
+      { id: 101, name: 'Alice Johnson', email: 'alice@example.com',progress: 75,  },
+      { id: 102, name: 'Bob Smith', email: 'bob@example.com' ,progress: 75, }
     ]
   },
   {
@@ -197,8 +197,8 @@ const courses = [
       }
     ],
     students: [
-      { id: 101, name: 'Alice Johnson', email: 'alice@example.com' },
-      { id: 102, name: 'Bob Smith', email: 'bob@example.com' }
+      { id: 101, name: 'Alice Johnson', email: 'alice@example.com', progress: 100 },
+      { id: 102, name: 'Bob Smith', email: 'bob@example.com' , progress: 75 }
     ]
   },
   {
@@ -228,8 +228,8 @@ const courses = [
       }
     ],
     students: [
-      { id: 101, name: 'James Hall', email: 'alice@example.com' },
-      { id: 102, name: 'Bob Smith', email: 'bob@example.com' }
+      { id: 101, name: 'James Hall', email: 'alice@example.com' ,progress: 75 },
+      { id: 102, name: 'Bob Smith', email: 'bob@example.com' ,progress: 75 }
     ]
   },
   {
@@ -259,8 +259,8 @@ const courses = [
       }
     ],
     students: [
-      { id: 101, name: 'James Hall', email: 'alice@example.com' },
-      { id: 102, name: 'Bob Smith', email: 'bob@example.com' }
+      { id: 101, name: 'James Hall', email: 'alice@example.com',progress: 75  },
+      { id: 102, name: 'Bob Smith', email: 'bob@example.com' ,progress: 75 }
     ]
   },
   {
@@ -290,8 +290,8 @@ const courses = [
       }
     ],
     students: [
-      { id: 101, name: 'James Hall', email: 'alice@example.com' },
-      { id: 102, name: 'Bob Smith', email: 'bob@example.com' }
+      { id: 101, name: 'James Hall', email: 'alice@example.com',progress: 75  },
+      { id: 102, name: 'Bob Smith', email: 'bob@example.com',progress: 75  }
     ]
   },
   {
@@ -321,8 +321,8 @@ const courses = [
       }
     ],
     students: [
-      { id: 101, name: 'Alice Johnson', email: 'alice@example.com' },
-      { id: 102, name: 'Bob Smith', email: 'bob@example.com' }
+      { id: 101, name: 'Sudhanshu', email: 'alice@example.com',progress: 75  },
+      { id: 102, name: 'Bob Smith', email: 'bob@example.com',progress: 75  }
     ]
   },
   {
@@ -352,8 +352,8 @@ const courses = [
       }
     ],
     students: [
-      { id: 101, name: 'Alice', email: 'alice@example.com' },
-      { id: 102, name: 'Bob Smith', email: 'bob@example.com' }
+      { id: 101, name: 'Alice', email: 'alice@example.com',progress: 75  },
+      { id: 102, name: 'Bob Smith', email: 'bob@example.com',progress: 75  }
     ]
   },
   {
@@ -383,14 +383,20 @@ const courses = [
       }
     ],
     students: [
-      { id: 101, name: 'SUdhnashu', email: 'alice@example.com' },
-      { id: 102, name: 'Bob Smith', email: 'bob@example.com' }
+      { id: 101, name: 'Alice Johnson', email: 'alice@example.com',progress: 50  },
+      { id: 102, name: 'Bob Smith', email: 'bob@example.com',progress: 75  }
     ]
   },
   // Additional course objects...
 ];
 
-// Routes
+const welcome= "Hello";
+
+
+app.get('/', (req,res) => {
+  res.json(welcome);
+})
+
 app.get('/courses', (req, res) => {
   res.json(courses);
 });
@@ -403,6 +409,60 @@ app.get('/courses/:id', (req, res) => {
     res.status(404).send('Course not found');
   }
 });
+
+app.post('/courses/:id/like', (req, res) => {
+  const course = courses.find(c => c.id === parseInt(req.params.id));
+  if (course) {
+    course.likes = parseInt(course.likes) + 1;
+    res.json(course);
+  } else {
+    res.status(404).send('Course not found');
+  }
+});
+
+app.delete('/courses/:id/like', (req, res) => {
+  const course = courses.find(c => c.id === parseInt(req.params.id));
+  if (course) {
+    course.likes = parseInt(course.likes) - 1;
+    res.json(course);
+  } else {
+    res.status(404).send('Course not found');
+  }
+});
+
+app.get('/courses/:courseId/students/:studentId/progress', (req, res) => {
+  const { courseId, studentId } = req.params;
+  const course = courses.find(c => c.id === parseInt(courseId));
+  if (course) {
+    const student = course.students.find(s => s.id === parseInt(studentId));
+    if (student) {
+      res.json({ progress: student.progress });
+    } else {
+      res.status(404).send('Student not found');
+    }
+  } else {
+    res.status(404).send('Course not found');
+  }
+});
+
+app.post('/courses/:courseId/students/:studentId/progress', (req, res) => {
+  const { courseId, studentId } = req.params;
+  const { progress } = req.body;
+  const course = courses.find(c => c.id === parseInt(courseId));
+  if (course) {
+    const student = course.students.find(s => s.id === parseInt(studentId));
+    if (student) {
+      student.progress = progress;
+      res.json({ progress: student.progress });
+    } else {
+      res.status(404).send('Student not found');
+    }
+  } else {
+    res.status(404).send('Course not found');
+  }
+});
+
+
 
 // Start server
 app.listen(port, () => {

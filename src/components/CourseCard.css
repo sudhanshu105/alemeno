@@ -33,3 +33,16 @@
 .like{
     font-size: 13px;
 }
+
+.heart{
+    cursor: pointer;
+}
+
+.like_info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.smallchar{
+    font-size: 10px;
+}

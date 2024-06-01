@@ -3,24 +3,27 @@
     display: flex;
     background-color: rgb(0, 0, 0);
     padding: 2px;
-    box-shadow: 2px 2px 1px black;
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.567);
+    border-radius: 5px;
     color: rgb(255, 255, 255);
-    /* height: 300px; */
-    height: 350px;
+    min-height: 350px;
+    height: fit-content;
     overflow: hidden;
-    width: 200px;
-    /* width: fit-content; */
+    width: 220px;
+    justify-content: center;
     margin-bottom: 10px;
 }
 
 .details{
     font-size: 10px;
     color: rgb(255, 255, 255) !important;
+    padding-top: 9px;
 }
 
 .dash-card img{
     height: 100px;
-    width: 200px;
+    width: 220px;
+    border-radius: 5px;
 }
 
 .dash-card img:hover{
@@ -42,12 +45,11 @@
 
 .progress-bar{
     height: 5px;
-    /* background-color: rebeccapurple !important; */
 }
 
 .select{
     height: 5px;
-    background-color: aqua;
+    background-color: rgb(43, 183, 78);
 }
 
 .single_line{
@@ -58,13 +60,12 @@
 .dash-card{
     margin-bottom: 10px;
     margin-right: 10px;
-    /* align-items: center; */
     display: flex;
 
 }
 
 .open{
-    color: aquamarine;
+    color: rgb(206, 223, 217);
 }
 
 .close{

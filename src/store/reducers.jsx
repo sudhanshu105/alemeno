@@ -1,31 +1,23 @@
-import { fetchCourses } from "../api"; 
+import { fetchCourses } from "../api";
 
 const courses = await fetchCourses();
 const names = 'Alice Johnson';
+const id = '101';
 
-const enrolledCourses= courses.filter(
-  // eslint-disable-next-line
-  c=>{
-    let course={};
-    c.students.forEach(e=>{
-    if(e.name===names)course=c;
-    })
-    if(course.name)
-    return course;
-    }
-    
+const enrolledCourses = courses.filter(
+  c => c.students.some(e => e.name === names)
 );
-
 
 const initialState = {
   courses: courses,
   enrolledCourses: enrolledCourses,
   expandedWeeks: {},
   completedCourses: {},
-  namestudent: names
+  namestudent: names,
+  studentId: id,
 };
 
-const courseReducer = (state = initialState, action) => { 
+const courseReducer = (state = initialState, action) => {
   switch (action.type) {
     case 'SET_COURSES':
       return { ...state, courses: action.payload };
@@ -57,10 +49,18 @@ const courseReducer = (state = initialState, action) => {
         }
       };
     }
+    case 'LIKE_COURSE':
+      return {
+        ...state,
+        courses: state.courses.map(course =>
+          course.id === action.payload
+            ? { ...course, likes: parseInt(course.likes) + 1 }
+            : course
+        ),
+      };
     default:
       return state;
   }
 };
 
 export default courseReducer;
-

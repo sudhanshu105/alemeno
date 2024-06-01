@@ -1,0 +1,40 @@
+.content-demo{
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.video{
+    height: 400px;
+    width: 600px;
+}
+
+.demo-content{
+    padding-left: 10%;
+}
+
+
+@media screen and (max-width: 768px) {
+    .video{
+        min-height: 300px;
+        height: 50%;
+        width: 90%;
+    }
+
+    .content-demo h1{
+        padding-left: 10px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .video{
+        height: 200px;
+        width: 90%;
+    }
+
+    .content-demo h1{
+        padding-left: 10px;
+    }
+}
