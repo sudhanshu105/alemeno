@@ -2,7 +2,8 @@
     padding-top: 20px;
     display: flex;
     column-gap: 10px;
-    background-color: #00203FFF;
+    /* background-color: #00203FFF; */
+    /* background-color: #FC766AFF; */
     color: white;
     max-width: 90%;
     overflow-x: scroll;

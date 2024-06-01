@@ -6,6 +6,8 @@ import CourseList from '../components/CourseList';
 import SearchBar from '../components/SearchBar';
 import './CourseListingPage.css';
 import PopularList from '../components/PopularList';
+// import Typewriter from "typewriter-effect";
+import { useTypewriter } from 'react-simple-typewriter';
 
 const CourseListingPage = () => {
   const dispatch = useDispatch();
@@ -30,32 +32,37 @@ const CourseListingPage = () => {
     setFilteredCourses(filtered);
   };
 
+  const [text]= useTypewriter({
+    words: ['Coursify'],
+  })
+
   return (
     <div className="course-listing-page">
-
       <div className='info'>
         <div className='text'>
-        <h1>Welcome to Coursify</h1>
-        <p>Your one stop solution to all your educational needs</p></div>
-        <img className='heroImg' alt="mainImg" src='/hero.jpg' />
+          
+          <h1>Welcome to <span class="highlight">{text}</span></h1>
+
+          <p>Your one stop solution to all your educational needs</p>
+        </div>
+        <img className='heroImg' alt="mainImg" src='/instruct.webp' />
       </div>
+      <br />
       <div className="search">
-      <SearchBar onSearch={handleSearch} /></div>
-
+        <h2>Explore All Available Courses!</h2>
+        <SearchBar onSearch={handleSearch} />
+      </div>
       <div className="explore">
-        <h2>Explore All Courses!</h2>
         <div className="courseBox">
-      <CourseList courses={filteredCourses} />
+          <CourseList courses={filteredCourses} />
+        </div>
       </div>
-      </div>
-
       <div className="explore">
         <h2>Most Popular Courses!</h2>
         <div className="courseBox">
-      <PopularList courses={courses} />
+          <PopularList courses={courses} />
+        </div>
       </div>
-      </div>
-
     </div>
   );
 };

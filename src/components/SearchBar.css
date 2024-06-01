@@ -1,7 +1,17 @@
 .searchbar{
     background-color: rgb(255, 255, 255);
-    height: 50px;
-    width: 450px;
+    height: 55px;
+    width: 550px;
     border: none;
     border-radius: 20px;
+}
+
+@media screen and (max-width: 500px) {
+    .searchbar{
+        background-color: rgb(255, 255, 255);
+        height: 55px;
+        width: 70%;
+        border: none;
+        border-radius: 20px;
+    }
 }

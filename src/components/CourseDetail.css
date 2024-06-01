@@ -9,3 +9,17 @@
     height: 200px;
     width: 400px;
 }
+
+.syllabus-week h4 {
+    cursor: pointer;
+  }
+  
+  .syllabus-week p {
+    margin-left: 20px;
+  }
+
+  .highligh{
+    color: rgb(104, 40, 40);
+    font-size: 20px;
+    font-weight: bold;
+  }

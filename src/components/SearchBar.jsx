@@ -12,7 +12,7 @@ const SearchBar = ({ onSearch }) => {
   return (
     <input
       type="text"
-      placeholder="Search courses..."
+      placeholder=" Search courses or Instructors..."
       value={query}
       onChange={handleSearch}
       className="searchbar"

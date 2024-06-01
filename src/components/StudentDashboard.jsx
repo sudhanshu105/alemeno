@@ -1,19 +1,20 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
+import DashboardCard from './DashboardCard';
+import './StudentDashboard.css';
 
 const StudentDashboard = () => {
-  const enrolledCourses = useSelector(state => state.courses.enrolledCourses);
+
+  const name = useSelector(state => state.courses.namestudent);  // Name of the student is fetched
+  const enrolledCourses = useSelector(state => state.courses.enrolledCourses); //Courses in which this particular student is fetched
 
   return (
     <div className="student-dashboard">
       <h1>My Enrolled Courses</h1>
-      <div className="course-list">
+      <h3 >Student Name : <span className='naming'> {name} </span></h3>
+      <div className="dashboard-list">
         {enrolledCourses.map(course => (
-          <div key={course.id} className="course-card">
-            <h3>{course.name}</h3>
-            <p>{course.instructor}</p>
-            {/* Add additional course details as needed */}
-          </div>
+          <DashboardCard key={course.id} course={course} />
         ))}
       </div>
     </div>

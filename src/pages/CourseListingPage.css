@@ -1,36 +1,102 @@
-.course-listing-page{
+/* Add your existing CSS */
+.course-listing-page {
     padding-left: 10%;
     padding-top: 70px;
 }
 
-.search{
+.search {
     display: flex;
     justify-content: center;
+    align-items: center;
+    column-gap: 50px;
     margin-right: 10%;
 }
 
-/* .courseBox{
-    width: 300px;
-    border: 1px solid black;
-    padding-left: 10px;
-    background-color: #00203FFF;
-    color: azure;
-
-} */
-
-.courseBox a{
-    text-decoration: none;
-    /* color: white; */
+.search h2 {
+    font-size: 30px;
+    color: white;
 }
 
-.info{
+.info {
     display: flex;
     justify-content: center;
+    column-gap: 10%;
     margin-right: 10%;
     margin-bottom: 20px;
 }
 
-.info img{
+.info img {
     height: 30%;
     width: 40%;
+}
+
+.text {
+    color: white;
+}
+
+.text h1 {
+    font-size: 40px;
+    margin: 0; 
+    padding: 0; 
+    display: inline;
+}
+
+.highlight {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.explore h2{
+    color: white;
+}
+
+
+@media screen and (max-width: 500px) {
+    .course-listing-page {
+        padding-left: 5%;
+        padding-top: 70px;
+    }
+
+    .search {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 10px;
+        margin-right: 0;
+    }
+    
+    .search h2 {
+        font-size: 20px;
+        color: white;
+    }
+    
+    .info {
+        display: flex;
+        justify-content: center;
+        /* column-gap: 10%; */
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    
+    .info img {
+        height: 200px;
+        width: 200px;
+    }
+    
+    .text {
+        color: white;
+    }
+    
+    .text h1 {
+        font-size: 30px;
+        margin: 0; 
+        padding: 0; 
+        display: inline;
+    }
+    
+    .highlight {
+        font-size: 40px;
+        font-weight: bold;
+    }
+    
 }

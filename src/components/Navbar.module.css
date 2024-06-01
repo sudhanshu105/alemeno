@@ -10,12 +10,23 @@
     position: fixed;
     top: 0;
     margin-top: 0;
-    background-color: #00203FFF;
+    /* background-color: #00203FFF; */
+
+    background-color: rgb(252, 118, 106);
+    /* background-color: black; */
     align-items: center;
     padding-top: 10px;
     padding-bottom: 10px;
     height: 35px;
-    box-shadow: 1px 1px 1px rgb(44, 43, 43);
+    box-shadow: 2px 1px 1px rgba(225, 220, 220, 0.696);
+    font-weight: bold;
+}
+
+@media screen and (max-width: 500px) {
+    .Navbar{
+        width: 100%;
+        padding-left: 5%;
+    }
 }
 
 .menu{
@@ -25,7 +36,7 @@
 }
 
 .active{
-    color: rgb(1, 196, 235);
+    color: rgb(0, 0, 0);
     text-decoration: none;
     font-weight: bold;
 }
@@ -35,6 +46,85 @@
     text-decoration: none;
 }
 
-nav link:hover{
-    color: aqua;
+nav a:hover{
+    color: rgb(11, 68, 68);
+}
+
+
+/* Navbar.module.css */
+
+.Navbar {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    padding: 1rem;
+    color: white;
+    width: 100%;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu a {
+    margin: 0 1rem;
+    color: white;
+    text-decoration: none;
+}
+
+.sign a {
+    color: white;
+    text-decoration: none;
+}
+
+.sign{
+    padding-right: 5px !important;
+}
+
+.active {
+    font-weight: bold;
+}
+
+.simple {
+    font-weight: normal;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: rgb(252, 118, 106);
+        position: absolute;
+        top: 60px;
+        left: 0;
+    }
+
+    .menu.open {
+        display: flex;
+    }
+
+    
+
+    .hamburger {
+        display: block;
+    }
+
+    .Navbar {
+        /* flex-direction: column; */
+        align-items: flex-start;
+    }
+
+    .sign {
+        /* margin-top: 1rem; */
+        /* margin-bottom: 10px; */
+        width: 100%;
+        text-align: right;
+    }
 }
